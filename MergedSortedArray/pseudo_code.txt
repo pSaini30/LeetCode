@@ -1,0 +1,28 @@
+merge 2 sorted arrays
+
+A = [1,2,3,0,0,0] m=3 B=[2,5,6] n = 3
+
+idx = m+n-1
+ptrA = m-1
+ptrB =  n - 1
+
+while(ptrA>=0 && ptrB>=0)
+{
+   int numA = A[ptrA]
+   int numB = B[ptrB]
+   if(numA >= numB)
+   { numA[idx] = numA;
+      ptrA--; 
+   }
+   else {
+	numA[idx] = numB;
+	ptrB--;
+	}
+   idx -- ; 
+
+} 
+ while(ptrB>=0) {
+  A[idx] = B[ptrB]
+  idx -- ;
+   ptrB--;
+}
