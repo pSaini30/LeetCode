@@ -1,0 +1,17 @@
+nums = [ 0, 0, 1, 1, 1, 1, 2, 3, 3]
+k =      0  1  2  3  3  3  4  5  6
+f =        t  f  t  t  t  f  f  t
+
+
+we need to remove duplicated such that it get repeated only 2 times
+ l = 0 r =0
+ while r < size ()
+  count =1
+     while r< size -1 && A[r]==A[r+1]
+          r++; count ++;
+
+     for i =0 to min(2,count)
+     A[l]=A[r]
+     l++;
+  r++ 
+retunr l
