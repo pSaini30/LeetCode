@@ -1,0 +1,16 @@
+hasmap to store element & occurance
+
+return element whole value > size/2;
+
+
+time complezxity: O(n)
+
+
+-----------------
+
+2nd approch will be
+ sort array 
+ return elemt at n/2
+
+ as the element should appear more than n/2 so it will be at n/2 position
+  but complexity will be O(n log n) as its the sort complexity
